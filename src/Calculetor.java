@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Calculetor {
 	
 	public static Scanner s;
-	public static Scanner p;
 	public static int a;
 	public static int b;
 
@@ -15,9 +14,8 @@ public class Calculetor {
 		System.out.print("Enter a value you want to add:");
 		int a = s.nextInt();
 		
-		p = new Scanner(System.in);
 		System.out.print("Enter a value you want to add:");
-		int b = p.nextInt();
+		int b = s.nextInt();
 		
 		Formula sum = new Formula();
 		System.out.println("Summention of "+a+" and "+b+" is :"+sum.add(a, b));
